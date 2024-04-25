@@ -1,0 +1,14 @@
+FROM python:3.8-slim
+
+WORKDIR /app
+
+COPY paragraphs.txt /app
+
+
+COPY Untitled3.py /app
+
+COPY requirements.txt /app
+RUN pip install -r requirements.txt
+
+
+CMD ["python", "Untitled3.py"]
